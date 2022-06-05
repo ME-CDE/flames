@@ -87,7 +87,7 @@ submit.addEventListener("click", () => {
         emptyDiv.classList.add('empty');
         img.setAttribute('src', './happy.gif');
             emptyDiv.classList.remove('remove');
-            message.textContent = 'NOT AN INPUT';
+            message.textContent = 'ENTER BOTH NAME';
             ui.classList.add('remove');
     }
 });
