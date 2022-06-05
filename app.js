@@ -30,19 +30,14 @@ submit.addEventListener("click", () => {
         for (let index = 0; index < input2.length; index++) {
             const element = input1.includes(`${input2[index]}`);
             result.push(element)
-            
         }
-        console.log(result);
         for (let index = 0; index < input1.length; index++) {
             const element1 = input2.includes(`${input1[index]}`);
             result.push(element1)
-            console.log(result);
         }
-    console.log(result);
     const number = result.filter((result) => {
         return result === false
     })
-    console.log(number);
     const cal = Math.trunc(number.length % 6)
     if(!input1 == "" && !input2 == "" ) {
         if (cal == 1 || number.length == 0) {
